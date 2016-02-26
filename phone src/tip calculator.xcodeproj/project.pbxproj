@@ -7,15 +7,99 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A17D56D1C7B9A7600F84EC6 /* 58 - Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A17D5681C7B9A7600F84EC6 /* 58 - Settings.png */; };
+		0A17D56E1C7B9A7600F84EC6 /* 76 - iPad (@1x).png in Resources */ = {isa = PBXBuildFile; fileRef = 0A17D5691C7B9A7600F84EC6 /* 76 - iPad (@1x).png */; };
+		0A17D56F1C7B9A7600F84EC6 /* 120 - iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A17D56A1C7B9A7600F84EC6 /* 120 - iPhone.png */; };
+		0A17D5701C7B9A7600F84EC6 /* 152 - iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A17D56B1C7B9A7600F84EC6 /* 152 - iPad.png */; };
+		0A17D5711C7B9A7600F84EC6 /* 180 - iPhone 6 Plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A17D56C1C7B9A7600F84EC6 /* 180 - iPhone 6 Plus.png */; };
+		0A17D5751C7B9E1F00F84EC6 /* 80 - Spotlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A17D5741C7B9E1F00F84EC6 /* 80 - Spotlight.png */; };
+		0A3D11E81C7FCFDF007119C2 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A3D11E61C7FCFDF007119C2 /* Interface.storyboard */; };
+		0A3D11EA1C7FCFDF007119C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A3D11E91C7FCFDF007119C2 /* Assets.xcassets */; };
+		0A3D11F11C7FCFDF007119C2 /* watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0A3D11F01C7FCFDF007119C2 /* watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0A3D11F81C7FCFDF007119C2 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D11F71C7FCFDF007119C2 /* InterfaceController.swift */; };
+		0A3D11FA1C7FCFDF007119C2 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D11F91C7FCFDF007119C2 /* ExtensionDelegate.swift */; };
+		0A3D11FC1C7FCFDF007119C2 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D11FB1C7FCFDF007119C2 /* NotificationController.swift */; };
+		0A3D11FE1C7FCFDF007119C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A3D11FD1C7FCFDF007119C2 /* Assets.xcassets */; };
+		0A3D12021C7FCFDF007119C2 /* watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0A3D11E41C7FCFDE007119C2 /* watch.app */; };
 		0A63D0FE1C5168FB008A7BF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A63D0FD1C5168FB008A7BF3 /* AppDelegate.swift */; };
 		0A63D1001C5168FB008A7BF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A63D0FF1C5168FB008A7BF3 /* ViewController.swift */; };
 		0A63D1031C5168FB008A7BF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A63D1011C5168FB008A7BF3 /* Main.storyboard */; };
 		0A63D1051C5168FB008A7BF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A63D1041C5168FB008A7BF3 /* Assets.xcassets */; };
 		0A63D1081C5168FB008A7BF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A63D1061C5168FB008A7BF3 /* LaunchScreen.storyboard */; };
 		0A63D1101C519E29008A7BF3 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A63D10F1C519E29008A7BF3 /* background.png */; };
+		0AE624391C7BB34300C3B132 /* 87.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AE624381C7BB34300C3B132 /* 87.png */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0A3D11F21C7FCFDF007119C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A63D0F21C5168FB008A7BF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A3D11EF1C7FCFDF007119C2;
+			remoteInfo = "watch Extension";
+		};
+		0A3D12001C7FCFDF007119C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A63D0F21C5168FB008A7BF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A3D11E31C7FCFDE007119C2;
+			remoteInfo = watch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0A3D11E11C7FCF62007119C2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A3D12061C7FCFDF007119C2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0A3D11F11C7FCFDF007119C2 /* watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AE624741C7FC94F00C3B132 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				0A3D12021C7FCFDF007119C2 /* watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0A17D5681C7B9A7600F84EC6 /* 58 - Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "58 - Settings.png"; sourceTree = "<group>"; };
+		0A17D5691C7B9A7600F84EC6 /* 76 - iPad (@1x).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "76 - iPad (@1x).png"; sourceTree = "<group>"; };
+		0A17D56A1C7B9A7600F84EC6 /* 120 - iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "120 - iPhone.png"; sourceTree = "<group>"; };
+		0A17D56B1C7B9A7600F84EC6 /* 152 - iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "152 - iPad.png"; sourceTree = "<group>"; };
+		0A17D56C1C7B9A7600F84EC6 /* 180 - iPhone 6 Plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "180 - iPhone 6 Plus.png"; sourceTree = "<group>"; };
+		0A17D5741C7B9E1F00F84EC6 /* 80 - Spotlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "80 - Spotlight.png"; sourceTree = "<group>"; };
+		0A3D11E41C7FCFDE007119C2 /* watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A3D11E71C7FCFDF007119C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		0A3D11E91C7FCFDF007119C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A3D11EB1C7FCFDF007119C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A3D11F01C7FCFDF007119C2 /* watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A3D11F61C7FCFDF007119C2 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		0A3D11F71C7FCFDF007119C2 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		0A3D11F91C7FCFDF007119C2 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		0A3D11FB1C7FCFDF007119C2 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		0A3D11FD1C7FCFDF007119C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A3D11FF1C7FCFDF007119C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A63D0FA1C5168FB008A7BF3 /* tip calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tip calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A63D0FD1C5168FB008A7BF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A63D0FF1C5168FB008A7BF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,9 +108,17 @@
 		0A63D1071C5168FB008A7BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A63D1091C5168FB008A7BF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A63D10F1C519E29008A7BF3 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		0AE624381C7BB34300C3B132 /* 87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 87.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0A3D11ED1C7FCFDF007119C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0A63D0F71C5168FB008A7BF3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,12 +129,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A3D11E51C7FCFDF007119C2 /* watch */ = {
+			isa = PBXGroup;
+			children = (
+				0A3D11E61C7FCFDF007119C2 /* Interface.storyboard */,
+				0A3D11E91C7FCFDF007119C2 /* Assets.xcassets */,
+				0A3D11EB1C7FCFDF007119C2 /* Info.plist */,
+			);
+			path = watch;
+			sourceTree = "<group>";
+		};
+		0A3D11F41C7FCFDF007119C2 /* watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0A3D11F71C7FCFDF007119C2 /* InterfaceController.swift */,
+				0A3D11F91C7FCFDF007119C2 /* ExtensionDelegate.swift */,
+				0A3D11FB1C7FCFDF007119C2 /* NotificationController.swift */,
+				0A3D11FD1C7FCFDF007119C2 /* Assets.xcassets */,
+				0A3D11FF1C7FCFDF007119C2 /* Info.plist */,
+				0A3D11F51C7FCFDF007119C2 /* Supporting Files */,
+			);
+			path = "watch Extension";
+			sourceTree = "<group>";
+		};
+		0A3D11F51C7FCFDF007119C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A3D11F61C7FCFDF007119C2 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		0A63D0F11C5168FB008A7BF3 = {
 			isa = PBXGroup;
 			children = (
 				0A63D0FC1C5168FB008A7BF3 /* tip calculator */,
+				0A3D11E51C7FCFDF007119C2 /* watch */,
+				0A3D11F41C7FCFDF007119C2 /* watch Extension */,
 				0A63D0FB1C5168FB008A7BF3 /* Products */,
 				0A63D10F1C519E29008A7BF3 /* background.png */,
+				0A17D5681C7B9A7600F84EC6 /* 58 - Settings.png */,
+				0A17D5691C7B9A7600F84EC6 /* 76 - iPad (@1x).png */,
+				0A17D56A1C7B9A7600F84EC6 /* 120 - iPhone.png */,
+				0A17D56B1C7B9A7600F84EC6 /* 152 - iPad.png */,
+				0A17D56C1C7B9A7600F84EC6 /* 180 - iPhone 6 Plus.png */,
+				0A17D5741C7B9E1F00F84EC6 /* 80 - Spotlight.png */,
+				0AE624381C7BB34300C3B132 /* 87.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,6 +182,8 @@
 			isa = PBXGroup;
 			children = (
 				0A63D0FA1C5168FB008A7BF3 /* tip calculator.app */,
+				0A3D11E41C7FCFDE007119C2 /* watch.app */,
+				0A3D11F01C7FCFDF007119C2 /* watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +204,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0A3D11E31C7FCFDE007119C2 /* watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A3D12071C7FCFDF007119C2 /* Build configuration list for PBXNativeTarget "watch" */;
+			buildPhases = (
+				0A3D11E21C7FCFDE007119C2 /* Resources */,
+				0A3D12061C7FCFDF007119C2 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A3D11F31C7FCFDF007119C2 /* PBXTargetDependency */,
+			);
+			name = watch;
+			productName = watch;
+			productReference = 0A3D11E41C7FCFDE007119C2 /* watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		0A3D11EF1C7FCFDF007119C2 /* watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A3D12031C7FCFDF007119C2 /* Build configuration list for PBXNativeTarget "watch Extension" */;
+			buildPhases = (
+				0A3D11EC1C7FCFDF007119C2 /* Sources */,
+				0A3D11ED1C7FCFDF007119C2 /* Frameworks */,
+				0A3D11EE1C7FCFDF007119C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "watch Extension";
+			productName = "watch Extension";
+			productReference = 0A3D11F01C7FCFDF007119C2 /* watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		0A63D0F91C5168FB008A7BF3 /* tip calculator */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A63D10C1C5168FB008A7BF3 /* Build configuration list for PBXNativeTarget "tip calculator" */;
@@ -77,10 +245,13 @@
 				0A63D0F61C5168FB008A7BF3 /* Sources */,
 				0A63D0F71C5168FB008A7BF3 /* Frameworks */,
 				0A63D0F81C5168FB008A7BF3 /* Resources */,
+				0AE624741C7FC94F00C3B132 /* Embed Watch Content */,
+				0A3D11E11C7FCF62007119C2 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0A3D12011C7FCFDF007119C2 /* PBXTargetDependency */,
 			);
 			name = "tip calculator";
 			productName = "tip calculator";
@@ -97,8 +268,16 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "abraxas creative";
 				TargetAttributes = {
+					0A3D11E31C7FCFDE007119C2 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = VP7GQDY552;
+					};
+					0A3D11EF1C7FCFDF007119C2 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
 					0A63D0F91C5168FB008A7BF3 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = VP7GQDY552;
 					};
 				};
 			};
@@ -116,18 +295,44 @@
 			projectRoot = "";
 			targets = (
 				0A63D0F91C5168FB008A7BF3 /* tip calculator */,
+				0A3D11E31C7FCFDE007119C2 /* watch */,
+				0A3D11EF1C7FCFDF007119C2 /* watch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0A3D11E21C7FCFDE007119C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A3D11EA1C7FCFDF007119C2 /* Assets.xcassets in Resources */,
+				0A3D11E81C7FCFDF007119C2 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A3D11EE1C7FCFDF007119C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A3D11FE1C7FCFDF007119C2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0A63D0F81C5168FB008A7BF3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A17D5751C7B9E1F00F84EC6 /* 80 - Spotlight.png in Resources */,
 				0A63D1081C5168FB008A7BF3 /* LaunchScreen.storyboard in Resources */,
+				0A17D56F1C7B9A7600F84EC6 /* 120 - iPhone.png in Resources */,
+				0A17D5711C7B9A7600F84EC6 /* 180 - iPhone 6 Plus.png in Resources */,
 				0A63D1101C519E29008A7BF3 /* background.png in Resources */,
+				0A17D56E1C7B9A7600F84EC6 /* 76 - iPad (@1x).png in Resources */,
+				0A17D5701C7B9A7600F84EC6 /* 152 - iPad.png in Resources */,
 				0A63D1051C5168FB008A7BF3 /* Assets.xcassets in Resources */,
+				0AE624391C7BB34300C3B132 /* 87.png in Resources */,
+				0A17D56D1C7B9A7600F84EC6 /* 58 - Settings.png in Resources */,
 				0A63D1031C5168FB008A7BF3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +340,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0A3D11EC1C7FCFDF007119C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A3D11FC1C7FCFDF007119C2 /* NotificationController.swift in Sources */,
+				0A3D11FA1C7FCFDF007119C2 /* ExtensionDelegate.swift in Sources */,
+				0A3D11F81C7FCFDF007119C2 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0A63D0F61C5168FB008A7BF3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -146,7 +361,28 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		0A3D11F31C7FCFDF007119C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A3D11EF1C7FCFDF007119C2 /* watch Extension */;
+			targetProxy = 0A3D11F21C7FCFDF007119C2 /* PBXContainerItemProxy */;
+		};
+		0A3D12011C7FCFDF007119C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A3D11E31C7FCFDE007119C2 /* watch */;
+			targetProxy = 0A3D12001C7FCFDF007119C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		0A3D11E61C7FCFDF007119C2 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A3D11E71C7FCFDF007119C2 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		0A63D1011C5168FB008A7BF3 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -166,6 +402,69 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0A3D12041C7FCFDF007119C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abraxascreative.tip-and-split.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		0A3D12051C7FCFDF007119C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abraxascreative.tip-and-split.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		0A3D12081C7FCFDF007119C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: elizabeth hayes (VP7GQDY552)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = watch_Extension;
+				INFOPLIST_FILE = watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abraxascreative.tip-and-split.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		0A3D12091C7FCFDF007119C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: elizabeth hayes (VP7GQDY552)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: elizabeth hayes (VP7GQDY552)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = watch_Extension;
+				INFOPLIST_FILE = watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abraxascreative.tip-and-split.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
 		0A63D10A1C5168FB008A7BF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -242,6 +541,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -251,10 +551,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: elizabeth hayes (VP7GQDY552)";
 				INFOPLIST_FILE = "tip calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.abraxascreative.tip-calculator";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abraxascreative.tip-and-split";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7e551a6f-bb13-44b3-938e-972433922aec";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -263,10 +565,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: elizabeth hayes (VP7GQDY552)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: elizabeth hayes (VP7GQDY552)";
 				INFOPLIST_FILE = "tip calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.abraxascreative.tip-calculator";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abraxascreative.tip-and-split";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7e551a6f-bb13-44b3-938e-972433922aec";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -274,6 +579,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0A3D12031C7FCFDF007119C2 /* Build configuration list for PBXNativeTarget "watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A3D12041C7FCFDF007119C2 /* Debug */,
+				0A3D12051C7FCFDF007119C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0A3D12071C7FCFDF007119C2 /* Build configuration list for PBXNativeTarget "watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A3D12081C7FCFDF007119C2 /* Debug */,
+				0A3D12091C7FCFDF007119C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		0A63D0F51C5168FB008A7BF3 /* Build configuration list for PBXProject "tip calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -290,6 +611,7 @@
 				0A63D10E1C5168FB008A7BF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

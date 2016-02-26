@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8D91341A7D5D385824596FF45DD72750DDE35D3D+++7CB61F1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8D91341A7D5D385824596FF45DD72750DDE35D3D+++1D73C5B" : 0,
+    "8D91341A7D5D385824596FF45DD72750DDE35D3D+++4DDF3B7" : 0,
+    "8D91341A7D5D385824596FF45DD72750DDE35D3D+++7CB61F1" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D11D2086-F0F9-4449-A3B1-12F6E6D05630",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8D91341A7D5D385824596FF45DD72750DDE35D3D+++1D73C5B" : "a-watch-tip-eric\/",
+    "8D91341A7D5D385824596FF45DD72750DDE35D3D+++4DDF3B7" : "a-watch-tip-eric\/",
+    "8D91341A7D5D385824596FF45DD72750DDE35D3D+++7CB61F1" : "a-watch-tip\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "tip calculator",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "phone src\/tip calculator.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/dooderlani\/a-watch-tip.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8D91341A7D5D385824596FF45DD72750DDE35D3D+++1D73C5B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/airikh\/a-watch-tip.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8D91341A7D5D385824596FF45DD72750DDE35D3D+++4DDF3B7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/dooderlani\/a-watch-tip.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8D91341A7D5D385824596FF45DD72750DDE35D3D+++7CB61F1"
+    }
+  ]
+}

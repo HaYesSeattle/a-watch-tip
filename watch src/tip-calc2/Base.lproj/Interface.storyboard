@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
     </dependencies>
     <scenes>
@@ -10,44 +10,55 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="tip_calc2" customModuleProvider="target">
                     <items>
-                        <group width="1" height="45" alignment="left" id="V9h-FP-Zgo">
+                        <group width="1" alignment="right" id="V9h-FP-Zgo" userLabel="Bill">
                             <items>
-                                <label width="0.10000000000000001" alignment="left" text="$" id="TEc-pr-8b2"/>
-                                <picker width="0.40000000000000002" widthAdjustment="1" height="40" alignment="left" style="sequence" focusStyle="stack" indicatorMode="shownWhileFocused" id="yXn-xG-v3K">
+                                <label alignment="right" verticalAlignment="center" text="$" baselineAdjustment="alignCenters" id="TEc-pr-8b2" userLabel="Bill Dollar-sign"/>
+                                <picker width="0.40000000000000002" widthAdjustment="1" height="45" alignment="right" verticalAlignment="bottom" focusStyle="stack" id="yXn-xG-v3K">
                                     <connections>
-                                        <action selector="billDollar:" destination="AgC-eL-Hgc" id="aGF-HL-QVr"/>
+                                        <action selector="billDollarsPickerAction:" destination="AgC-eL-Hgc" id="d6t-Wb-z9r"/>
                                     </connections>
                                 </picker>
-                                <label width="0.10000000000000001" alignment="left" verticalAlignment="bottom" text="." textAlignment="center" id="3gD-Rw-4nb"/>
-                                <picker width="0.29999999999999999" height="40" alignment="left" accessibilityLabel="dollar" accessibilityValue="10" focusStyle="stack" indicatorMode="shownWhileFocused" id="Bjp-Np-JtO">
+                                <label width="0.10000000000000001" alignment="right" verticalAlignment="bottom" text="." textAlignment="center" id="3gD-Rw-4nb"/>
+                                <picker width="0.29999999999999999" height="45" alignment="right" verticalAlignment="bottom" accessibilityLabel="dollar" accessibilityValue="10" focusStyle="stack" id="Bjp-Np-JtO">
                                     <connections>
-                                        <action selector="billCents:" destination="AgC-eL-Hgc" id="EmE-9Q-SrE"/>
+                                        <action selector="billCentsPickerAction:" destination="AgC-eL-Hgc" id="af3-Na-kXe"/>
                                     </connections>
                                 </picker>
                             </items>
                         </group>
-                        <group width="1" height="44" alignment="left" id="I4T-Hi-ymk">
+                        <group width="1" alignment="center" id="I4T-Hi-ymk" userLabel="Tip">
                             <items>
-                                <picker width="0.33333299999999999" widthAdjustment="1" height="40" alignment="left" id="aWP-2k-2yY"/>
-                                <label width="25" height="41.5" alignment="left" text="%" id="tRL-ix-sn2"/>
-                                <label width="56" height="41.5" alignment="left" text="123.67" textAlignment="right" id="BkF-q2-B7D">
+                                <picker width="0.33333299999999999" widthAdjustment="1" height="45" alignment="left" verticalAlignment="bottom" focusStyle="stack" id="aWP-2k-2yY">
+                                    <connections>
+                                        <action selector="tipPercentPickerAction:" destination="AgC-eL-Hgc" id="ax5-0L-XOg"/>
+                                    </connections>
+                                </picker>
+                                <label alignment="left" verticalAlignment="center" text="%" baselineAdjustment="alignCenters" id="tRL-ix-sn2"/>
+                                <label alignment="right" verticalAlignment="center" text="123.67" textAlignment="right" id="BkF-q2-B7D">
                                     <fontDescription key="font" style="UICTFontTextStyleBody"/>
                                 </label>
                             </items>
                         </group>
-                        <separator alignment="left" id="UnM-mh-IA6"/>
-                        <group width="1" alignment="left" id="GuB-fg-rGa">
+                        <separator alignment="center" id="UnM-mh-IA6"/>
+                        <group width="134" alignment="right" id="GuB-fg-rGa" userLabel="Total and Split">
                             <items>
-                                <label width="0.10000000000000001" height="39.5" alignment="left" text="÷" id="b2D-wh-3pf"/>
-                                <picker width="37.5" height="40" alignment="left" id="Kb0-rb-RYx"/>
-                                <label width="75" height="41.5" alignment="left" text="123.67" textAlignment="right" id="sra-s3-vTI"/>
+                                <label alignment="left" verticalAlignment="center" text="÷" baselineAdjustment="alignCenters" id="b2D-wh-3pf"/>
+                                <picker width="37.5" height="45" alignment="left" verticalAlignment="bottom" focusStyle="stack" id="Kb0-rb-RYx">
+                                    <connections>
+                                        <action selector="numSplittingPickerAction:" destination="AgC-eL-Hgc" id="Ip9-KM-mEP"/>
+                                    </connections>
+                                </picker>
+                                <label alignment="right" verticalAlignment="center" text="123.67" textAlignment="right" id="sra-s3-vTI"/>
                             </items>
                         </group>
                     </items>
                     <connections>
-                        <outlet property="billCents" destination="Bjp-Np-JtO" id="VXg-yn-Nnv"/>
-                        <outlet property="billDollar" destination="yXn-xG-v3K" id="qzJ-5K-txT"/>
-                        <outlet property="splitTotalLabel" destination="TEc-pr-8b2" id="zVe-Hg-P3g"/>
+                        <outlet property="billCentsPickerOutlet" destination="Bjp-Np-JtO" id="KxO-hL-xIT"/>
+                        <outlet property="billDollarsPickerOutlet" destination="yXn-xG-v3K" id="1BE-39-j4H"/>
+                        <outlet property="numSplittingPickerOutlet" destination="Kb0-rb-RYx" id="nsY-dx-dSx"/>
+                        <outlet property="tipAmoutLabelOutlet" destination="BkF-q2-B7D" id="xDd-cg-f2D"/>
+                        <outlet property="tipPercentPickerOutlet" destination="aWP-2k-2yY" id="FPe-sB-DM6"/>
+                        <outlet property="totalPerPersonLabelOutlet" destination="sra-s3-vTI" id="bWw-lU-g81"/>
                     </connections>
                 </controller>
             </objects>

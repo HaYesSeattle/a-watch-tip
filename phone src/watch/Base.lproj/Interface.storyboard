@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="watch" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="right" id="TUN-Le-Giz" userLabel="Bill">
+                            <items>
+                                <label alignment="right" verticalAlignment="center" text="$" baselineAdjustment="alignCenters" id="jDe-eP-5vv" userLabel="Bill Dollar-sign"/>
+                                <picker width="0.40000000000000002" widthAdjustment="1" height="45" alignment="right" verticalAlignment="bottom" focusStyle="stack" id="bpV-Iq-b0p">
+                                    <connections>
+                                        <action selector="billDollarsPickerAction:" destination="AgC-eL-Hgc" id="5Oa-Dt-46i"/>
+                                    </connections>
+                                </picker>
+                                <label width="0.10000000000000001" alignment="right" verticalAlignment="bottom" text="." textAlignment="center" id="3MF-Ic-oLm"/>
+                                <picker width="0.29999999999999999" height="45" alignment="right" verticalAlignment="bottom" accessibilityLabel="dollar" accessibilityValue="10" focusStyle="stack" id="Vr1-37-GOF">
+                                    <connections>
+                                        <action selector="billCentsPickerAction:" destination="AgC-eL-Hgc" id="zGZ-cn-LPO"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                        <group width="1" alignment="center" id="Zwr-7Q-d2f" userLabel="Tip">
+                            <items>
+                                <picker width="0.33333299999999999" widthAdjustment="1" height="45" alignment="left" verticalAlignment="bottom" focusStyle="stack" id="yRW-Eb-Fnf">
+                                    <connections>
+                                        <action selector="tipPercentPickerAction:" destination="AgC-eL-Hgc" id="B4I-GW-w74"/>
+                                    </connections>
+                                </picker>
+                                <label alignment="left" verticalAlignment="center" text="%" baselineAdjustment="alignCenters" id="DIi-pR-iBF"/>
+                                <label alignment="right" verticalAlignment="center" text="123.67" textAlignment="right" id="lNR-Oe-y2q">
+                                    <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                </label>
+                            </items>
+                        </group>
+                        <separator alignment="center" id="3KN-t5-z9r"/>
+                        <group width="134" alignment="right" id="A3m-ll-PPc" userLabel="Total and Split">
+                            <items>
+                                <label alignment="left" verticalAlignment="center" text="÷" baselineAdjustment="alignCenters" id="ZRr-Pg-h1a"/>
+                                <picker width="37.5" height="45" alignment="left" verticalAlignment="bottom" focusStyle="stack" id="eGp-kH-8zx">
+                                    <connections>
+                                        <action selector="numSplittingPickerAction:" destination="AgC-eL-Hgc" id="lhN-Y1-yFX"/>
+                                    </connections>
+                                </picker>
+                                <label alignment="right" verticalAlignment="center" text="123.67" textAlignment="right" id="RfI-8E-WqI"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="billCentsPickerOutlet" destination="Vr1-37-GOF" id="HVp-4v-q5g"/>
+                        <outlet property="billDollarsPickerOutlet" destination="bpV-Iq-b0p" id="6Nb-js-S51"/>
+                        <outlet property="numSplittingPickerOutlet" destination="eGp-kH-8zx" id="i0j-4O-naZ"/>
+                        <outlet property="tipAmoutLabelOutlet" destination="lNR-Oe-y2q" id="Z24-Od-sv4"/>
+                        <outlet property="tipPercentPickerOutlet" destination="yRW-Eb-Fnf" id="pfS-Iv-IGL"/>
+                        <outlet property="totalPerPersonLabelOutlet" destination="RfI-8E-WqI" id="JJ8-Iz-gOZ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="watch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>

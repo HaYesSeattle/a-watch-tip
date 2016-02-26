@@ -34,28 +34,14 @@ class ViewController: UIViewController {
     var tipTotal:Double = 2.00
     var currentString = 1.00
     
-    //let billTotalNum:Double = 12.00
     let billSplitTotalNum:Double = 12.00
     
-    //680.00           ÷2                  340.00
-    //billText.text  splitNumText.text   billLabel.text
-    //billNum         splitNum            billNumSplit
-    //
-    // tipNumText.text      timNumLabel.text
-    // tipNum                tipTotal
-    //
-    // billTotalLabel.text     billSplitTotalLabel.text
-    // billTotalNum             billSplitTotalNum
-    
-    //@IBAction func billNumChange(sender: AnyObject) {
-        //tallyBill(billNum)
-    //}
     
     @IBAction func billTextChange(sender: AnyObject) {
         currentString = Double(billText.text!)!
         //
         tallyBill(currentString)
-        print("$%$%$%$ ",currentString )
+        //print("$%$%$%$ ",currentString )
     }
     
     @IBAction func billNumChange(sender: AnyObject) {
@@ -66,12 +52,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func splitNumTextChange(sender: AnyObject) {
-        let splitNum = Int(splitNumText.text!)
-        
-        splitNumLabel.text = "÷ \(splitNum!)"
+        var splitNum = Int(splitNumText.text!)
+        if splitNum == 0{
+            splitNum = 1
+        }
+        else{
+            splitNumLabel.text = "÷ \(splitNum!)"
+        }
         tallyBill(splitNum!)
-        
-        print(":::::splitNumCHange splitNum ", splitNum, "billNum ",billNum )
+        //print(":::::splitNumCHange splitNum ", splitNum, "billNum ",billNum )
         
     }
     @IBAction func splitNumChange(sender: AnyObject) {
@@ -87,8 +76,6 @@ class ViewController: UIViewController {
         let tipNum = Int(tipNumText.text!)!
         
         tallyBill(tipNum)
-        print ("tipNumChange")
-        
     }
     @IBAction func tipNumChange(sender: AnyObject) {
         
@@ -100,7 +87,6 @@ class ViewController: UIViewController {
     }
     
     func tallyBill(sender: AnyObject){
-        print ("tallyBill")
         var splitNum = Double(splitNumText.text!)
         
         if splitNumText.text == ""{
@@ -111,7 +97,7 @@ class ViewController: UIViewController {
         
         if tipNumText.text == "" {
             tipNum = 20
-            print("tip number = 0")
+            //print("tip number = 0")
         }
         
         billNumSplit = (billNum / splitNum!)
@@ -128,7 +114,7 @@ class ViewController: UIViewController {
         let billSplitTotalNum = billSplitTot + tipRoundTot
         billSplitTotalLabel.text = (formatter.stringFromNumber(billSplitTotalNum)!)
         
-        print(":::::billSplitTotal splitNum", billSplitTot, splitNum, "tipRoundTot ",tipRoundTot, "tipNumTotal ",tipNumTotal, "tipNumTotal " )
+        //print(":::::billSplitTotal splitNum", billSplitTot, splitNum, "tipRoundTot ",tipRoundTot, "tipNumTotal ",tipNumTotal, "tipNumTotal " )
     }
     
     
@@ -144,8 +130,6 @@ class ViewController: UIViewController {
         tipNumLabel.text = (formatter.stringFromNumber(tipTotal)!)
         
         billSplitTotalLabel.text = (formatter.stringFromNumber(billSplitTotalNum)!)
-        print ("viewDidLoad")
-        
     }
 
     override func didReceiveMemoryWarning() {

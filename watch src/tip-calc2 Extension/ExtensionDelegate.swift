@@ -12,6 +12,14 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
+        
+        // Set defaults for persistent data, for first time app is used.
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.registerDefaults([
+            "billDollarsPickerIndex": 10,
+            "billCentsPickerIndex": 0,
+            "tipPercentPickerIndex": 15
+        ])
     }
 
     func applicationDidBecomeActive() {
